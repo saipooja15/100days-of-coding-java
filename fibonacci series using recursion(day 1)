@@ -1,0 +1,17 @@
+1.	class FibonacciExample2{  
+2.	 static int n1=0,n2=1,n3=0;    
+3.	 static void printFibonacci(int count){    
+4.	    if(count>0){    
+5.	         n3 = n1 + n2;    
+6.	         n1 = n2;    
+7.	         n2 = n3;    
+8.	         System.out.print(" "+n3);   
+9.	         printFibonacci(count-1);    
+10.	     }    
+11.	 }    
+12.	 public static void main(String args[]){    
+13.	  int count=10;    
+14.	  System.out.print(n1+" "+n2);//printing 0 and 1    
+15.	  printFibonacci(count-2);//n-2 because 2 numbers are already printed   
+16.	 }  
+17.	}  
