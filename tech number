@@ -1,0 +1,42 @@
+A number is called a tech number if the given number has an even number of digits and the number can be divided exactly 
+into two parts from the middle. After equally dividing the number, sum up the numbers and find the square of the sum.
+If we get the number itself as square, the given number is a tech number, else, not a tech number. For example, 3025 is a tech number.
+
+
+import java.util.Scanner;
+import java.lang.Math;
+import java.io.*;
+public class tech {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int n;
+		System.out.println("enter the number");
+		n= sc.nextInt();
+		int count=0;
+		int temp=n;
+		int sum=0;
+		while(n>0)
+		{
+			int rem=n%10;
+			count=count+1;
+			n=n/10;
+		}
+		System.out.println(count);
+		if(count%2==0)
+		{
+			int firstHalf=0, secondHalf=0;
+		 firstHalf =  temp % (int) Math.pow(10, count / 2);  
+		 secondHalf = temp / (int) Math.pow(10, count / 2); 
+		 System.out.println(firstHalf);
+			System.out.println(secondHalf);
+		sum=(int)Math.pow((firstHalf+secondHalf),2);
+		}
+		if(sum==temp)
+		{
+		System.out.println("tech number");
+		}
+		else
+			System.out.println("not a tech number");
+}
+}
