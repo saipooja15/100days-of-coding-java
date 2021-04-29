@@ -1,0 +1,22 @@
+A number is called a sunny number if the number next to the given number is a perfect square. In other words, a number N will be a sunny number if N+1 is a perfect square.
+import java.util.Scanner;
+import java.io.*;
+import java.lang.Math;
+public class day41 {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int n;
+		System.out.println("enter the number");
+		n= sc.nextInt();
+		int temp=n+1;
+		double sqr=Math.sqrt(temp);
+		if(sqr-Math.floor(sqr)==0)
+		{
+			System.out.println("sunny number");
+		}
+		else
+			System.out.println("not  sunny");
+	}
+
+}
