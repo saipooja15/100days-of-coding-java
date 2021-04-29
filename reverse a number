@@ -1,0 +1,60 @@
+import java.util.Scanner;
+import java.io.*;
+public class reverse
+{
+    public static void main(String args[])
+    {
+        Scanner sc= new Scanner(System.in);
+        int n;
+        System.out.println("enter a number");
+        n=sc.nextInt();
+        int rev=0;
+        while(n>0)
+        {
+            int rem=n%10;
+            rev= rev*10+rem;
+            n=n/10;
+        }
+        System.out.println(rev);
+        
+    }
+}
+
+
+
+
+Reverse a number using recursion
+ReverseNumberExample3.java
+
+import java.util.Scanner;  
+public class ReverseNumberExample3  
+{  
+//method for reverse a number  
+public static void reverseNumber(int number)   
+{  
+if (number < 10)   
+{  
+//prints the same number if the number is less than 10  
+System.out.println(number);  
+return;  
+}  
+else   
+{  
+System.out.print(number % 10);  
+reverseNumber(number/10);  
+}  
+}  
+public static void main(String args[])  
+{  
+System.out.print("Enter the number that you want to reverse: ");  
+Scanner sc = new Scanner(System.in);  
+int num = sc.nextInt();  
+System.out.print("The reverse of the given number is: ");  
+//method calling  
+reverseNumber(num);  
+}  
+}  
+Output 1:
+
+Enter the number that you want to reverse: 9
+The reverse of the given number is: 9
