@@ -1,0 +1,80 @@
+PrintAsciiValueExample2.java
+
+public class PrintAsciiValueExample2  
+{  
+public static void main(String[] String)   
+{  
+int ch1 = 'a';  
+int ch2 = 'b';  
+System.out.println("The ASCII value of a is: "+ch1);  
+System.out.println("The ASCII value of b is: "+ch2);  
+}  
+}  
+Output:
+
+The ASCII value of a is: 97
+The ASCII value of b is: 98
+
+
+
+Type-casting is a way to cast a variable into another datatype.
+
+In the following program, we have declared two variables ch1 and ch2 of type char having the character a and b, respectively. In the next two lines, we have cast char type to int type using (int). After executing these two lines, the variable ch1 and ch2 are converted to an int variable ascii1 and ascii2, respectively.
+
+Finally, we have printed the variable ascii1 and ascii2 in which ASCII values of the characters are stored.
+
+PrintAsciiValueExample3.java
+
+public class PrintAsciiValueExample3   
+{  
+public static void main(String[] args)   
+{  
+//characters whose ASCII value to be found  
+char ch1 = 'a';  
+char ch2 = 'b';  
+//casting or converting a charter into int type  
+int ascii1 = (int) ch1;  
+int ascii2 = (int) ch2;  
+System.out.println("The ASCII value of " + ch1 + " is: " + ascii1);  
+System.out.println("The ASCII value of " + ch1 + " is: " + ascii2);  
+}  
+}  
+Output:
+
+The ASCII value of a is: 97
+The ASCII value of b is: 98
+
+
+
+
+The following program prints the ASCII value (0 to 255) of all the characters. In the output, we have shown a few values.
+
+AsciiValueOfAllChracters.java
+
+public class AsciiValueOfAllChracters  
+{  
+public static void main(String[] args)   
+{  
+for(int i = 0; i <= 255; i++)  
+{  
+System.out.println(" The ASCII value of " + (char)i + "  =  " + i);  
+}  
+}  
+}   
+
+
+
+If we want to print the ASCII value of all the alphabets (A to Z), we can set the values in the loop and print them.
+
+AsciiValueAtoZ.java
+
+public class AsciiValueAtoZ  
+{  
+public static void main(String[] args)   
+{  
+for(int i = 65; i <= 90; i++)  
+{  
+System.out.println(" The ASCII value of " + (char)i + "  =  " + i);  
+}  
+}  
+}  
